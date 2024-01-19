@@ -1,0 +1,25 @@
+{
+  "name": "npmscriptsstarter",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "nodemonConfig": {
+    "events": {
+      "start": "nodeMonNowIs=$(date +\"%T\") && echo Current Time: $nodeMonNowIs",
+      "crash": "osascript -e 'display notification \"Something Broke\" with title \"npmScriptsStarter\"'"
+    }
+  },
+  "scripts": {
+    "clean": "rm -r _site/",
+    "build:dev": "npx @11ty/eleventy --serve --quiet --incremental",
+    "build:debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
+    "build:prod": "npx @11ty/eleventy",
+    "dev": "npm run build:dev",
+    "prod": "npm run build:prod"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
