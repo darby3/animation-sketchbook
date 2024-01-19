@@ -1,25 +1,40 @@
 :root {
+  --max-width: 1000px;
   --outer-margin: 1.5rem;
+  --apply-max-width-margins: calc(100% - 2 * var(--outer-margin));
+
+  --bg: darkslategray;
+  --fg: lightcyan;
+
+  /* https://systemfontstack.com/ */
+
+  --system-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --system-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
 
 html {
   font-size: 20px;
+  font-family: var(--system-sans);
 }
 
 body {
-  margin: var(--outer-margin);
-  background-color: darkslategray;
-  color: lightcyan;
-
-  display: flex;
-  flex-flow: column nowrap;
-  min-height: calc(100vh - 2 * var(--outer-margin));
-
-  main {
-    flex-grow: 1;
-  }
+  background-color: var(--bg);
+  color: var(--fg);
 }
 
 a {
   color: white;
+}
+
+/* Wrappers */
+
+.width-wrapper {
+  width: var(--apply-max-width-margins);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.vs-wrapper {
+  display: grid;
+  gap: var(--vs-space, 2rem);
 }

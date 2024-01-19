@@ -1,0 +1,50 @@
+---
+title: Sample Page
+layout: main
+styles:
+- keyframes/keyframes.css
+- keyframes/samples.css
+scripts:
+- keyframes/script.js
+---
+
+<div class="width-wrapper vs-wrapper">
+    <div>
+        <h1>Keyframes</h1>
+        <p>Sample images via: https://picsum.photos/400/400</p>
+    </div>
+
+    <div class="props vs-wrapper" style="--vs-space: 0.5rem;">
+        <h2>Properties</h2>
+
+        <div class="prop">
+            <label for='timing'>Timing value (e.g., '2s')</label>
+            <input type='text' name='animation-timing' id='timing'>
+        </div>
+    </div>
+
+    <div class="sample">
+        <button data-target="fadeIn">fadeIn</button>
+        <img src="https://picsum.photos/400/400" alt="sample" style="--this-keyframe: fadeIn">
+    </div>
+
+    <div class="sample">
+        <button data-target="fadeOut">fadeOut</button>
+        <img data-target="fadeOut" src="https://picsum.photos/400/400" alt="sample" style="--this-keyframe: fadeOut">
+    </div>
+
+    <div class="sample">
+        <div class="local-props">
+            <button data-target="slideIn">slideIn</button>
+            <div class="local-prop">
+                <label for='hDist'>hDist (e.g. '50px')</label>
+                <input type='text' name='hDist' id='hDist'>
+            </div>
+            <div class="local-prop">
+                <label for='vDist'>vDist (e.g. '50px')</label>
+                <input type='text' name='vDist' id='vDist'>
+            </div>
+        </div>
+        <img data-target="slideIn" src="https://picsum.photos/400/400" alt="sample" style="--this-keyframe: slideIn">
+    </div>
+</div>

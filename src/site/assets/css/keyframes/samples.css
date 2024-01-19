@@ -1,0 +1,42 @@
+.sample {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+
+  border: 1px solid var(--fg);
+  padding: 2rem;
+  gap: 2rem;
+
+  button {
+    width: max-content;
+    margin-inline: auto;
+  }
+
+  img {
+    margin-inline: auto;
+
+    &:not(.active) {
+      animation: none;
+    }
+
+    &.active {
+      animation: var(--animation-timing, 2s) ease both;
+      animation-name: var(--this-keyframe);
+    }
+  }
+}
+
+.prop, .local-prop {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.local-props {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  align-items: center;;
+
+  justify-content: normal;
+}
