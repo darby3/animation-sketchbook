@@ -1,0 +1,26 @@
+.gsap-box {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+
+  background-color: black;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border: 1px solid white;
+}
+
+.gsap-text-box {
+  aspect-ratio: 1 / 1;
+
+  background-color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  padding: 1rem;
+}

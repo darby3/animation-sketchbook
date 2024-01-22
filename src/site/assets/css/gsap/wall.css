@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+.words {
+  margin-block: 1rem;
+  overflow: hidden;
+
+  display: flex;
+
+  /* Defaults; modify or delete */
+
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.word {
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  width: min-content;
+}

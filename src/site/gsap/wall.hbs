@@ -1,0 +1,53 @@
+---
+title: GSAP stuff
+layout: main
+styles:
+- gsap/wall.css
+scripts:
+- gsap/gsap-wall.js
+---
+
+<div class="width-wrapper vs-wrapper">
+    <div>
+        <h1>Floaty <s>wall</s> line of words</h1>
+    </div>
+
+    <div>
+        <button id="stopAnim">stop it</button>
+        <button id="startAnim">start it</button>
+        <button id="reverseAnim">reverse it</button>
+    </div>
+</div>
+
+<div class="words">
+    <div class="word">Alfa</div>
+    <div class="word">Bravo</div>
+    <div class="word">Charlie</div>
+    <div class="word">Delta</div>
+    <div class="word">Echo</div>
+    {{!-- <div class="word">Foxtrot</div>
+    <div class="word">Golf</div>
+    <div class="word">Hotel</div>
+    <div class="word">India</div>
+    <div class="word">Juliett</div> --}}
+</div>
+
+
+<!-- All the includes -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Observer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EaselPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/PixiPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+
+
+<!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>

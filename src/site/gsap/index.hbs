@@ -1,0 +1,68 @@
+---
+title: GSAP stuff
+layout: main
+styles:
+- keyframes/keyframes.css
+- keyframes/samples.css
+- gsap/gsap.css
+scripts:
+- gsap/gsap-1.js
+---
+
+<div class="width-wrapper vs-wrapper">
+    <div>
+        <h1>GSAP stuff</h1>
+    </div>
+
+    <div class="sample">
+        <button data-target="gsap0">trigger this</button>
+
+        <div class="gsap-box" data-object="gsap0">Target</div>
+    </div>
+
+    <div class="sample">
+        <button data-target="gsap1">trigger it</button>
+
+        <div class="gsap-box" data-object="gsap1">Target</div>
+    </div>
+
+    <div class="sample">
+        <button data-target="gsap2">trigger that</button>
+
+        <div class="gsap-text-box" data-object="gsap2">How about...</div>
+    </div>
+
+    <div class="sample">
+        <button data-target="gsap3">from to</button>
+
+        <div class="gsap-box" data-object="gsap3">Target</div>
+    </div>
+
+    <div class="sample">
+        <div>
+            <button data-target="gsap4">from to repeat?</button>
+            <button id="stopRepeat">oh stop it</button>
+        </div>
+
+        <div class="gsap-box" data-object="gsap4">Target</div>
+    </div>
+</div>
+
+<!-- All the includes -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Observer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EaselPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/PixiPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+
+
+<!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
