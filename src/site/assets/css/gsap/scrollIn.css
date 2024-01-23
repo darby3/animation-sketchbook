@@ -13,10 +13,24 @@ body {
 
   background-color: rgb(6, 37, 3, 0);
 
+  position: relative;
+
 
   span {
     font-size: 4rem;
     font-weight: bold;
     color: yellow;
   }
+
+  #d {
+    position: absolute;
+    top: 0;
+    right: -2rem;
+    line-height: 0;
+    font-size: 6rem;
+    aspect-ratio: 1 / 1;
+    display: block;
+    transform-origin: center;
+  }
+
 }
